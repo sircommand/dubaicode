@@ -1,14 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForEnumMembers": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "jsx": "preserve",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "outDir": ".next",
     "allowJs": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -19,7 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "incremental": true,
+    "isolatedModules": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
